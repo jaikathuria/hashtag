@@ -1,3 +1,13 @@
+<?php
+session_start();
+if(isset($_SESSION['login'])){
+    header("Location:homepage.php");
+}
+else{
+    
+    ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -124,9 +134,13 @@
                 </script>
            <?php		         }
                                  }
+    
            ?>
             <script src="assets/js/login.js"></script>
 
             
     </body>
 </html>
+<?php
+}
+?>
